@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# gb10-cluster-check: read-only ConnectX-7 fabric check for NVIDIA GB10 systems.
+# Thin wrapper: finds python3 and the core module next to this script.
+set -euo pipefail
+
+here="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+core="${here}/gb10check.py"
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "gb10-cluster-check: python3 is required" >&2
+  exit 2
+fi
+if [[ ! -f "${core}" ]]; then
+  echo "gb10-cluster-check: ${core} not found (keep gb10check.py next to this script)" >&2
+  exit 2
+fi
+if [[ "$(uname -s)" != "Linux" ]]; then
+  echo "gb10-cluster-check: runs on the GB10 node itself (Linux)" >&2
+  exit 2
+fi
+
+exec python3 "${core}" "$@"

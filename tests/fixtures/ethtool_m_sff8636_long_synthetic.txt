@@ -1,0 +1,8 @@
+	Identifier                                : 0x11 (QSFP28)
+	Extended identifier                       : 0x00
+	Connector                                 : 0x23 (No separable connector)
+	Transmitter technology                    : 0xa0 (Copper cable unequalized)
+	Length (Copper or Active cable)           : 5m
+	Vendor name                               : GenericVendor
+	Vendor PN                                 : QSFP28-100G-DAC-5M
+	Vendor SN                                 : EXAMPLE0001

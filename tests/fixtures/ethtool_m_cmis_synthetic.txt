@@ -1,0 +1,14 @@
+	Identifier                                : 0x1e (QSFP+ or later with CMIS)
+	Power class                               : 1
+	Max power                                 : 0.25W
+	Connector                                 : 0x23 (No separable connector)
+	Cable assembly length                     : 0.50m
+	Tx CDR bypass control                     : No
+	Media interface technology                : 0x0a (Copper cable, unequalized)
+	Length (Copper or Active cable)           : 0.50m
+	Vendor name                               : Amphenol
+	Vendor OUI                                : 00:00:00
+	Vendor PN                                 : NJAAKR-0006
+	Vendor rev                                : G
+	Vendor SN                                 : EXAMPLE0000
+	Date code                                 : 250101
