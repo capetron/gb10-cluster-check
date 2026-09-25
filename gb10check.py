@@ -3,8 +3,8 @@
 on NVIDIA GB10 workstations (DGX Spark and the OEM GB10 systems).
 
 Standard library only. Nothing here changes system state: every command it runs
-is a query (ethtool, ip, ibdev2netdev, mlxlink in query mode, ping, and, only
-with --bw, an iperf3 / ib_write_bw client against a server you started).
+is a query (ethtool, ip, ibdev2netdev, nvidia-smi, ping, and, only with --bw,
+an iperf3 / ib_write_bw client against a server you started).
 """
 
 import argparse

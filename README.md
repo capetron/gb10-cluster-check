@@ -91,7 +91,7 @@ roughly 24.5 GB/s), which is what NCCL does when `NCCL_IB_HCA` lists both.
 
 ## Sample output
 
-Real runs on GB10 systems in a switched fabric, with addresses replaced by documentation
+Real runs on GB10 systems in a switched fabric, with the addresses replaced by
 placeholders. A healthy node, run as a normal user (so the cable EEPROM check is skipped),
 with its two peer addresses:
 
@@ -283,13 +283,15 @@ NVIDIA approves the Amphenol NJAAKK-N911 and NJAAKK0006 and the Luxshare LMTQF02
 (0.4 to 0.5 m QSFP112 passive DAC) for these ports, and Lenovo sells its own 4X91U42988.
 Any of them links at 200G. Petronella Technology Group, Inc. keeps the 0.5 m cable in
 stock in the United States:
-[GB10 / DGX Spark cluster cable](https://petronellatech.com/hardware/dgx-spark-cluster-cable/).
+[DGX Spark cluster cable](https://petronellatech.com/hardware/dgx-spark-cluster-cable/).
 
 ## More reading
 
 - [capetron/gb10-cluster-guide](https://github.com/capetron/gb10-cluster-guide): the full
   write-up behind these checks, from two nodes to a six-node switched fabric, with the
-  measurement commands (CC BY 4.0).
+  measurement commands (CC BY 4.0). Readable as a website at
+  https://capetron.github.io/gb10-cluster-guide/ (validation chapter:
+  https://capetron.github.io/gb10-cluster-guide/validation/).
 - NVIDIA DGX Spark User Guide, ConnectX-7 networking:
   https://docs.nvidia.com/dgx/dgx-spark/spark-clustering.html
 - NVIDIA playbooks: [Connect Two Sparks](https://build.nvidia.com/spark/connect-two-sparks),
